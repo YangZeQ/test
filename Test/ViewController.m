@@ -142,6 +142,7 @@
     
     NSString *jsonPlist = [[NSBundle mainBundle]pathForResource:@"json" ofType:@"plist"];
     NSLog(@"%@", jsonPlist);
+    NSLog(@"%@", jsonPlist);
     
     // 最后再从本地将数据从本地取出来 看下是否正确
     NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfURL:[NSURL fileURLWithPath:filename]];
