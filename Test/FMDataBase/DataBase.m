@@ -50,7 +50,7 @@ static DataBase *_DBCtl = nil;
 -(void)initDataBase{
     // 获得Documents目录路径
     NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    
+    NSLog(@"asdfas");
     // 文件路径
     NSString *filePath = [documentsPath stringByAppendingPathComponent:@"model.sqlite"];
     NSLog(@"filepath%@", filePath);
