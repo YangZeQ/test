@@ -101,7 +101,7 @@
         [indexButton addTarget:self action:@selector(indexButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         [indexView addSubview:indexButton];
     }
-    
+    NSLog(@"asdfas");
     [DataBase sharedDataBase];
 }
 - (void)indexButtonClick:(UIButton *)sender

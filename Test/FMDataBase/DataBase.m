@@ -54,7 +54,7 @@ static DataBase *_DBCtl = nil;
     // 文件路径
     NSString *filePath = [documentsPath stringByAppendingPathComponent:@"model.sqlite"];
     NSLog(@"filepath%@", filePath);
-    
+    NSLog(@"filepath%@", filePath);
     // 实例化FMDataBase对象
     _db = [FMDatabase databaseWithPath:filePath];
     [_db open];
