@@ -73,6 +73,7 @@
 }
 - (void)textTest
 {
+    NSLog(@"it's ok");
     NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:path];
     NSString *str = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
