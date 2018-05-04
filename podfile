@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
+use_frameworks!
+project 'Test.project'
+
+target:'Test' do
+pod 'FMDB', '~> 2.7.2'
+end
