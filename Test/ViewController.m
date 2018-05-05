@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TestFlowLayout.h"
 #import "DataBase.h"
+#import "ChartsViewController.h"
 @interface ViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource>
 /** 顶部view */
 @property (nonatomic, strong) UIView *topView;
@@ -199,7 +200,11 @@
     return titleLabel;
 //    return nil;
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ChartsViewController *charts = [[ChartsViewController alloc]init];
+    [self.navigationController pushViewController:charts animated:YES];
+}
 - (void)createCollectionView
 {
     TestFlowLayout *layout = [[TestFlowLayout alloc]init];

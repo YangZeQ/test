@@ -5,4 +5,5 @@ project 'Test.project'
 
 target:'Test' do
 pod 'FMDB', '~> 2.7.2'
+pod 'Charts', '~> 3.0.5'
 end
